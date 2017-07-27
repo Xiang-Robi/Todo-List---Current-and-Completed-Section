@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>todoList</title>
+</head>
+<body>
+	<div class="background">
+		
+		<div class="container" id="wrapper">
+			<!-- inputArea = header + tab + input box -->
+			<div class="container d-flex flex-column justify-content-between align-items-center" id="inputAreaCtn">
+				<p class="header" id="header">Todo List</p>
+				
+				<input class='inputBox'  type="text" name="" id="inputBox" class="inputBox" placeholder="Add a task..." >
+
+				<div class="container d-flex flex-row justify-content-center align-items-center" id="tabCtn">
+					<button class="nav-link btn btn-lg btn-primary btn-outline-success" id="tabCurr">Current Task</button>
+					<button class="nav-link btn btn-lg btn-primary btn-outline-success" id="tabCompleted">Completed Task</button>
+				</div>
+
+
+			</div>
+			
+			<!-- display area 1: current tasks -->
+			<div class="container displayAreaCtn active" id="displayAreaCtnCurr">
+				<ul class='curr' ></ul>
+			</div>
+			
+			<!-- display area 2: completed tasks -->
+			<div class="container displayAreaCtn" id="displayAreaCtnCompleted">
+				<ul class='completed'></ul>
+			</div>
+
+			<!-- control area -->
+			<div class="container d-flex flex-row justify-content-around align-items-center" id="controlAreaCtn">
+				<button class="btn primary-btn btn-lg" id="delBtnSelected">Mark as Completed</button>
+				<button class="btn primary-btn btn-lg" id="clearBtn">Clear Completed Tasks</button>
+			</div>
+
+		</div>
+	</div>
+
+
+	<script src="bundle.js"></script>
+</body>
+</html>
